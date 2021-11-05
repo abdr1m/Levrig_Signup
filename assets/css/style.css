@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    text-align: right;
+    font-weight: bold !important;
+    box-sizing: border-box; 
+}
+
+:root {
+    --main-color: #dd4814;
+    --secondary-color: #f2f2f2; 
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+/* header */
+header {
+    height: 200px;
+    background-color: var(--main-color);
+}
+
+header > div {
+    width: 85%;
+    margin: auto;
+}
+
+/* logo */
+header img {
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+/* signup form */
+.signup_form_container {
+    background-color: white;
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px #2222;
+    position: absolute; 
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.signup_form {
+    width: 550px;
+    margin: auto;
+    padding: 40px 0px;
+}
+
+@media screen and (max-width: 850px) {
+    .signup_form {
+        width: 100%;
+        padding: 40px 8px;
+    }
+}
+
+.signup_form .select {
+    display: flex;
+}
